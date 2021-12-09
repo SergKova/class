@@ -1,1 +1,33 @@
- 
+* {
+    box-sizing: border-box;
+}
+
+.conteiner {
+    border: 2px solid black;
+    min-height: 400px;
+
+
+}
+
+
+
+.item {
+    background-color: cadetblue;
+    border: 2px solid red;
+    color:white;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
+
+.flexConteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+}
