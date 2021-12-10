@@ -4,7 +4,8 @@
 
 .conteiner {
     border: 2px solid black;
-    min-height: 400px;
+    /* min-height: 50vh; /*
+    /*max-height: 90vh; */
 
 
 }
@@ -16,18 +17,24 @@
     border: 2px solid red;
     color:white;
     font-size: 2em;
-    padding: 10px 20px;
+     /*padding: 10px 20px;*/
     text-align: center;
     display: block;
-    margin: 20px;
+    
 }
 
 .flexConteiner {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+    flex-direction: row ;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+}
+.flex-item {
+    flex-basis: 120px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex: ;
 
 }
