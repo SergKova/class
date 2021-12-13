@@ -1,55 +1,50 @@
-* {
-    box-sizing: border-box;
-}
-
-.card-list {
-    width: 100vw;
-    height: 70vh;
-    background-color:cornflowerblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cvard-list {
+    background-color: azure;
+    position: relative;
 }
 
 .card-wrapper {
-    background-color: chartreuse;
-    min-width: 200px;
-    min-height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 300px;
+    background: linear-gradient(90deg, rgba(138,196,242,1) 0%, rgba(18,124,186,1) 100%);
+    font-family: sans-serif ;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
 
 }
 
-.user-image-conteiner {
-    width: 70px;
-    height: 70px;
+
+.card-wrapper::before, .card-wrapper::after {
+    width: 150px;
+    height: 150px;
+    background-color: white;
     border-radius: 50%;
+    opacity: 0.25;
+    content: '';
+    position: absolute;
+}
+
+.card-wrapper::before {
+    top: -3em;
+    right: -2em;
+
+}
+
+.card-wrapper::after {
+    bottom: -5em;
+    right: -1em;
+
+}
+
+.first-row {
     display: flex;
-    justify-content: center;
-    align-self: center;
-    padding: 10px;
-    box-shadow: 0px 15px 9px -2px rgba(0, 0, 0, 0.37);
-
-}
-.icon-link {
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.row {
-
-}
-
-.column {
-
-}
-
-
-.big-text {
-
-}
-
-.small-text {
-
+.big {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 10px 0 30px 0;
+    
 }
