@@ -1,37 +1,43 @@
-form {
-    display: block;
-    flex-direction: ;
-    max-width: 300px;
-}
-input:focus {
-    border: 2px solid red;
-}
+@import "./reset.css";
 
-input {
-    margin-top: 10px;
-    width: 300px;
-    height: 25px;
-
-}
-
-label {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-fieldset {
-    border: none;
-    color: blueviolet;
-}
-
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-p {
-    margin-left: 17px;
-    color: blueviolet;
-}
+.wrapper {
+    width: 200px;
+     height: 300px;
+   background-color: cornflowerblue;
+   margin: 0 auto;
+   padding: 10px;
+   position: relative;
+   
+   }
+   
+   .card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 300px;
+   align-items: center;
+   }
+   
+   
+   .card img {
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+   }
+   
+   .overlay {
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.644);
+   color: cornflowerblue;
+   width: 100%;
+   height: 0;
+   overflow: hidden;
+   bottom:0;
+   left: 0;
+   transition: height ease 1s;
+   }
+   
+   .wrapper:hover .overlay{
+     height: 70%;
+     
+   }
